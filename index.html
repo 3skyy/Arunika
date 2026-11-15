@@ -189,7 +189,7 @@ select{max-width:100%}
 
 <section aria-label="Peta 3D Pulau Arunika">
   <div class="world" id="world">
-    <div class="whud"><span id="clock">Pagi</span><span>Warga tampil: 220 dari 822</span><span>Bangunan: 73</span></div>
+    <div class="whud"><span id="clock">Pagi</span><span>Warga tampil: 220 dari 884</span><span>Bangunan: 73</span></div>
     <div class="whint">Geser untuk memutar · cubit atau scroll untuk zoom · ketuk rumah untuk lihat pemiliknya</div>
   </div>
   <p class="note" style="color:#cfe7ea;margin:8px 2px 0">Peta pulau Arunika: 67 rumah bernama, 4 gedung Kos Arunika, Koperasi Desa, dan jalan. Dermaga, masjid, kantor desa, dan sekolah dari Hari 3 akan ditambahkan ke peta ini.</p>
@@ -202,9 +202,10 @@ select{max-width:100%}
 var EP=[
  {h:1,j:"Penduduknya Baru Gue Doang",d:"Pulau kosong. Penduduknya baru Presiden Arun sendiri.",yt:"26NY4GqV8Wo"},
  {h:2,j:"67 Rumah buat Warga!",d:"67 rumah untuk warga yang komentar, 4 gedung Kos Arunika, dan Koperasi Desa.",yt:"wRNjj6CSP54"},
- {h:3,j:"Badai Pertama! Presiden Bayar Tukang Pakai Gajinya Sendiri",d:"Badai merusak 9 atap. Dermaga dan perahu nelayan dibangun. Masjid, kantor desa, dan sekolah mulai dibangun.",yt:"kGEBB6S30E0"}
+ {h:3,j:"Badai Pertama! Presiden Bayar Tukang Pakai Gajinya Sendiri",d:"Badai merusak 9 atap. Dermaga dan perahu nelayan dibangun. Masjid, kantor desa, dan sekolah mulai dibangun.",yt:"kGEBB6S30E0"},
+ {h:4,j:"Pulau Diperluas, Warga Gotong Royong!",d:"Warga memperluas pulau tanpa mesin. Desa ditata ulang menjadi 7 blok, dan Toko Rumah dibuka.",yt:""}
 ];
-var BARU={h:3,isi:["Badai pertama melanda. 9 atap rusak, lalu diganti atap rumbia.","Presiden Arun membayar 3 tukang 12 Kerang dari gajinya sendiri.","Dermaga dan perahu nelayan sudah jadi.","Masjid, kantor desa, dan sekolah mulai dibangun.","Ujian Calon Pejabat dibuka.","Pelajaran baru: Kedokteran dan Psikologi.","Portal bisa dibaca dalam bahasa Inggris dan Arab."]};
+var BARU={h:4,isi:["Pulau diperluas. Warga gotong royong memikul batu, menimbun pasir, dan menancap patok bambu tanpa mesin.","Desa ditata ulang menjadi 7 blok, masing-masing 10 rumah, dengan jalan tanah.","Toko Rumah dibuka. Tulis BELI RUMAH dan kodenya di komentar untuk membeli dengan saldo Kerang.","Kerang hasil penjualan rumah masuk kas negara untuk gaji warga: tanpa utang, tanpa bunga.","Setiap episode menyorot satu blok berisi 10 rumah warga, bergiliran dari warga yang paling lama ikut.","Episode baru tayang setiap hari pukul 17.30 WIB. Komentar sebelum 02.00 WIB masuk episode besok."]};
 var esc=function(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
 document.getElementById('barujudul').textContent='Baru di Hari '+BARU.h;
 document.getElementById('barulist').innerHTML=BARU.isi.map(function(x){return '<li>'+esc(x)+'</li>';}).join('');
@@ -234,7 +235,7 @@ document.getElementById('eplist').innerHTML=EP.slice().reverse().map(function(e)
 </section>
 
 <section class="tiles" aria-label="Ringkasan negara">
-  <div class="tile"><div class="k">Penduduk</div><div class="v">822</div><div class="s">YouTube 560 · TikTok 235 · Instagram 27</div></div>
+  <div class="tile"><div class="k">Penduduk</div><div class="v">884</div><div class="s">YouTube 620 · TikTok 236 · Instagram 28</div></div>
   <div class="tile"><div class="k">Kas Negara</div><div class="v">Menipis</div><div class="s">Gaji warga 743 🐚/hari · Kantor Desa sedang dibangun</div></div>
   <div class="tile"><div class="k">Bangunan</div><div class="v">73</div><div class="s">67 rumah · 4 Kos · Koperasi · Dermaga. Dibangun: Masjid, Kantor Desa, Sekolah</div></div>
   <div class="tile"><div class="k">Pejabat</div><div class="v">1</div><div class="s">Presiden Arun (masih sendirian)</div></div>
@@ -243,8 +244,8 @@ document.getElementById('eplist').innerHTML=EP.slice().reverse().map(function(e)
 <div class="two">
   <section class="card">
     <h2>Target Negara</h2>
-    <div class="bar" role="img" aria-label="822 dari 1.500 warga menuju target berikutnya"><i style="width:55%"></i></div>
-    <p class="note">822 dari 1.500 warga. Kurang 678 warga lagi untuk Ketua RW 01.</p>
+    <div class="bar" role="img" aria-label="884 dari 1.500 warga menuju target berikutnya"><i style="width:59%"></i></div>
+    <p class="note">884 dari 1.500 warga. Kurang 616 warga lagi untuk Ketua RW 01.</p>
     <ul class="steps">
       <li><span class="dot">✓</span><div><b>250 warga</b> · Dermaga dan perahu (jadi di Hari 3)</div></li>
       <li><span class="dot">✓</span><div><b>300 warga</b> · Pemilihan Ketua RT dibuka, calon wajib lulus ujian</div></li>
@@ -440,7 +441,7 @@ function sign(x,z,ry,lines){const g=new THREE.Group();g.position.set(x,0.55,z);g
  add(new THREE.BoxGeometry(0.12,1.6,0.12),M(0x6b4423),-0.9,0.8,0,g);add(new THREE.BoxGeometry(0.12,1.6,0.12),M(0x6b4423),0.9,0.8,0,g);
  const b=add(new THREE.BoxGeometry(2.4,1.2,0.12),[M(0xb88a52),M(0xb88a52),M(0xb88a52),M(0xb88a52),new THREE.MeshLambertMaterial({map:textTex(lines)}),M(0xb88a52)],0,1.7,0,g);return g;}
 sign(-1.2,-1.6,0.35,['KANTOR','PRESIDEN']);
-sign(2.4,-0.6,-0.5,['PENDUDUK','822']);
+sign(2.4,-0.6,-0.5,['PENDUDUK','884']);
 // bendera
 add(new THREE.CylinderGeometry(0.06,0.06,4,6),M(0xdddddd),-3.2,2.55,1.4);
 const fc2=document.createElement('canvas');fc2.width=256;fc2.height=160;const fx=fc2.getContext('2d');
