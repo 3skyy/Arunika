@@ -206,7 +206,7 @@ var EP=[
  {h:4,j:"Pulau Diperluas, Warga Gotong Royong!",d:"Warga memperluas pulau tanpa mesin. Desa ditata ulang menjadi 7 blok, dan Toko Rumah dibuka.",yt:"Wkprr1teZ5o"},
  {h:5,j:"Presiden Beli Vila Termahal, Uangnya ke Mana?",d:"Presiden membeli Vila V1 dari gajinya dan Kerangnya masuk kas. Rumah S1 terjual dengan cicilan. Masjid selesai.",yt:"nK4hO92mRm0"}
 ];
-var BARU={h:4,isi:["Pulau diperluas. Warga gotong royong memikul batu, menimbun pasir, dan menancap patok bambu tanpa mesin.","Desa ditata ulang menjadi 7 blok, masing-masing 10 rumah, dengan jalan tanah.","Toko Rumah dibuka. Tulis BELI RUMAH dan kodenya di komentar untuk membeli dengan saldo Kerang.","Kerang hasil penjualan rumah masuk kas negara untuk gaji warga: tanpa utang, tanpa bunga.","Setiap episode menyorot satu blok berisi 10 rumah warga, bergiliran dari warga yang paling lama ikut.","Episode baru tayang setiap hari pukul 17.30 WIB. Komentar sebelum 02.00 WIB masuk episode besok."]};
+var BARU={h:5,isi:["Presiden Arun membeli Vila Pantai V1 seharga 500 Kerang dari gajinya sendiri. Kerangnya masuk kas negara untuk gaji warga.","Rumah warga pertama terjual: S1 untuk @ATHAGAMING1, dicicil tanpa bunga.","Masjid Arunika selesai dibangun.","Restoran (usulan like terbanyak) dan gereja mulai dibangun di lahan baru.","Calon Ketua RT sekarang 4 orang.","Episode baru tayang setiap hari pukul 17.30 WIB. Komentar sebelum 02.00 WIB masuk episode besok."]};
 var esc=function(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
 document.getElementById('barujudul').textContent='Baru di Hari '+BARU.h;
 document.getElementById('barulist').innerHTML=BARU.isi.map(function(x){return '<li>'+esc(x)+'</li>';}).join('');
@@ -727,7 +727,7 @@ const PC={TikTok:'tt',Instagram:'ig',YouTube:'yt'};
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function render(){const d=EKO;
  const rows=['<tr><td class="role">Arun</td><td><span class="plat np">Karakter</span></td><td>Presiden</td><td class="num">–</td><td class="num">'+d.presiden.gaji+' 🐚</td><td class="num">'+d.presiden.total+' 🐚</td></tr>'];
- d.warga.forEach(w=>rows.push('<tr><td class="role">@'+esc(w.u)+'</td><td><span class="plat '+PC[w.p]+'">'+w.p+'</span></td><td>'+esc(w.prof)+(w.calon?' · <b>'+esc(w.calon)+'</b>':'')+(w.mulai<=7?' · <b>Warga Pendiri</b>':'')+'</td><td class="num">'+(w.rumah||'Dibangun Hari '+d.hari)+'</td><td class="num">'+w.gaji+' 🐚</td><td class="num">'+w.saldo+' 🐚</td></tr>'));
+ d.warga.forEach(w=>rows.push('<tr><td class="role">@'+esc(w.u)+'</td><td><span class="plat '+PC[w.p]+'">'+w.p+'</span></td><td>'+esc(w.prof)+(w.calon?' · <b>'+esc(w.calon)+'</b>':'')+(w.mulai<=7?' · <b>Warga Pendiri</b>':'')+'</td><td class="num">'+(w.rumah||'Dibangun Hari '+d.hari)+'</td><td class="num">'+w.gaji+' 🐚</td><td class="num">'+w.saldo+' 🐚'+(w.cicil?'<br><small>cicilan sisa '+w.cicil+' 🐚</small>':'')+'</td></tr>'));
  document.getElementById('diwanbody').innerHTML=rows.join('');
  document.getElementById('diwannote').textContent='Daftar resmi '+d.warga.length+' warga yang sudah berkomentar. Semua yang komen di Hari 1–7 mendapat gelar Warga Pendiri. Hanya username yang ditampilkan. Saldo = gaji harian + bonus komentar − pembelian. Mau namamu dihapus dari daftar? Komen "HAPUS NAMAKU" di video mana saja, dan namamu dihapus saat pembaruan berikutnya.';
  filt();
