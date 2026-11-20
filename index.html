@@ -178,7 +178,7 @@ select{max-width:100%}
     <path d="M18 72 Q28 66 38 72 T58 72 T78 72" stroke="#7fd0dc" stroke-width="3" fill="none"/>
   </svg>
   <div>
-    <span class="pill">HARI 3 · DIPERBARUI 14 NOV 2026</span>
+    <span class="pill">HARI 6 · DIPERBARUI 20 NOV 2026</span>
     <h1>Portal Warga Negara Arunika</h1>
     <div class="sub">Negara pulau fiksi yang dibangun dari komentar kalian. Mata uangnya Kerang.</div>
   </div>
@@ -204,9 +204,10 @@ var EP=[
  {h:2,j:"67 Rumah buat Warga!",d:"67 rumah untuk warga yang komentar, 4 gedung Kos Arunika, dan Koperasi Desa.",yt:"wRNjj6CSP54"},
  {h:3,j:"Badai Pertama! Presiden Bayar Tukang Pakai Gajinya Sendiri",d:"Badai merusak 9 atap. Dermaga dan perahu nelayan dibangun. Masjid, kantor desa, dan sekolah mulai dibangun.",yt:"kGEBB6S30E0"},
  {h:4,j:"Pulau Diperluas, Warga Gotong Royong!",d:"Warga memperluas pulau tanpa mesin. Desa ditata ulang menjadi 7 blok, dan Toko Rumah dibuka.",yt:"Wkprr1teZ5o"},
- {h:5,j:"Presiden Beli Vila Termahal, Uangnya ke Mana?",d:"Presiden membeli Vila V1 dari gajinya dan Kerangnya masuk kas. Rumah S1 terjual dengan cicilan. Masjid selesai.",yt:"nK4hO92mRm0"}
+ {h:5,j:"Presiden Beli Vila Termahal, Uangnya ke Mana?",d:"Presiden membeli Vila V1 dari gajinya dan Kerangnya masuk kas. Rumah S1 terjual dengan cicilan. Masjid selesai.",yt:"nK4hO92mRm0"},
+ {h:6,j:"4 Hari Ditinggal, Warga Malah Bikin Sawah!",d:"Warga bertani selama Presiden pergi. Restoran dan gereja berdiri. Rumah B2 terjual dengan cicilan. Patok lapangan mulai dipasang.",yt:""}
 ];
-var BARU={h:5,isi:["Presiden Arun membeli Vila Pantai V1 seharga 500 Kerang dari gajinya sendiri. Kerangnya masuk kas negara untuk gaji warga.","Rumah warga pertama terjual: S1 untuk @ATHAGAMING1, dicicil tanpa bunga.","Masjid Arunika selesai dibangun.","Restoran (usulan like terbanyak) dan gereja mulai dibangun di lahan baru.","Calon Ketua RT sekarang 4 orang.","Episode baru tayang setiap hari pukul 17.30 WIB. Komentar sebelum 02.00 WIB masuk episode besok."]};
+var BARU={h:6,isi:["Selama 4 hari Presiden pergi, warga membuat sawah dan bertani. Ini usulan like terbanyak di video pengumuman, dari Nna._.12-mpunggg.","Restoran dan gereja selesai dibangun.","Rumah B2 terjual ke @AbyanElsiraji: bayar 20 Kerang dulu, sisa 180 dicicil tanpa bunga.","Usulan like terbanyak berikutnya, lapangan (dari @alpanteekv2): patoknya mulai dipasang.","Warga terdaftar sekarang 565 orang.","Voting Hari 7: A stasiun atau B pemadam kebakaran. Tulis A atau B di komentar.","Episode baru tayang setiap hari pukul 17.30 WIB. Komentar sebelum 02.00 WIB masuk episode besok."]};
 var esc=function(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
 document.getElementById('barujudul').textContent='Baru di Hari '+BARU.h;
 document.getElementById('barulist').innerHTML=BARU.isi.map(function(x){return '<li>'+esc(x)+'</li>';}).join('');
@@ -261,14 +262,14 @@ document.getElementById('eplist').innerHTML=EP.slice().reverse().map(function(e)
   </section>
 
   <section class="card">
-    <h2>Usulan Terbanyak <span class="pill">VOTING HARI 4</span></h2>
+    <h2>Usulan Terbanyak <span class="pill">VOTING HARI 6</span></h2>
     <div class="vote" role="list">
-      <div class="vrow" role="listitem"><span>Perluas pulau lagi</span><span class="vb" style="width:100%"></span><span>45 like · disebut 15×</span></div>
-      <div class="vrow" role="listitem"><span>Pedesaan / kampung</span><span class="vb" style="width:38%"></span><span>17 like</span></div>
-      <div class="vrow" role="listitem"><span>Minimarket / Alfamart</span><span class="vb" style="width:29%"></span><span>disebut 13×</span></div>
-      <div class="vrow" role="listitem"><span>Hotel</span><span class="vb" style="width:27%"></span><span>disebut 12×</span></div>
+      <div class="vrow" role="listitem"><span>Lapangan / futsal / stadion</span><span class="vb" style="width:100%"></span><span>10 like · 3 orang</span></div>
+      <div class="vrow" role="listitem"><span>Stasiun kereta</span><span class="vb" style="width:50%"></span><span>5 like · 3 orang</span></div>
+      <div class="vrow" role="listitem"><span>Pemadam kebakaran</span><span class="vb" style="width:30%"></span><span>3 like</span></div>
+      <div class="vrow" role="listitem"><span>Rumah sakit</span><span class="vb" style="width:20%"></span><span>2 like</span></div>
     </div>
-    <p class="note">Usulan yang belum dibangun tetap dihitung. Hari 3 sudah membangun dermaga dan perahu, memperbaiki 9 atap setelah badai, dan mulai membangun masjid, kantor desa, dan sekolah. Bangunan besar dibangun sesuai urutan kebutuhan dan jumlah warga.</p>
+    <p class="note">Komentar 16–19 Nov dari YouTube dan TikTok. Like dari platform berbeda dijumlahkan apa adanya. Hari 6: warga membuat sawah, restoran dan gereja selesai, patok lapangan mulai dipasang. Voting Hari 7: tulis A (stasiun) atau B (pemadam kebakaran) di komentar.</p>
   </section>
 </div>
 
